@@ -1,0 +1,138 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1533147551-f81e30372fbd');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Todo Container - Transparent Background */
+.todo-container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Optional: adds a blur effect to the background */
+}
+
+/* Header */
+.todo-header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input Section */
+.todo-input-section {
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    outline: none;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+/* Three Columns: To Do, In Progress, Completed */
+.todo-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Individual Todo Column */
+.todo-column {
+    width: 30%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Todo List */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.task-checkbox:checked + .task-text {
+    text-decoration: line-through;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .todo-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .todo-column {
+        width: 100%;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript no 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- QUESTION 2 -->
+
+<!-- <form>
+    <label for="password"></label>
+    <input type="password" id="password" placeholder="Enter password">
+<br>
+    <label for="Cnfrmpassword"></label>
+    <input type="cnfrmpassword" id="cnfrm-password" placeholder="Enter Confirm-password">
+<br>
+    <button onclick="checkPassword()">Click me</button>
+</form> -->
+
+
+
+             <!-- .... QUESTION 6 .... -->
+             <!-- <div class="container">
+                <h1>Welcome to My Project</h1>
+                <button id="alertButton">Click Me!</button>
+            </div> -->
+        
+    <script src="app.js"></script>
+</body>
+</html>
+
+         <!-- QUESTION 7 -->
+
+1. Head Section
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example - Head</title>
+    <script>
+        function showAlert() {
+            alert("Hello from the head section!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showAlert()">Click Me!</button>
+</body>
+</html>
+<br>
+
+2.Body (Before Your Page's HTML)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example - Before Body</title>
+</head>
+<body>
+    <script>
+        function showAlert() {
+            alert("Hello from before the body!");
+        }
+    </script>
+    <button onclick="showAlert()">Click Me!</button>
+</body>
+</html>
+<br><br><br>
+
+3.Body (Inside Your Page's HTML)  <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example - Inside Body</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <script>
+        function showAlert() {
+            alert("Hello from inside the body!");
+        }
+    </script>
+    <button onclick="showAlert()">Click Me!</button>
+</body>
+</html>
+<br><br><br>
+
+4.Body (After Your Page's HTML)   <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example - After Body</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <button id="alertButton">Click Me!</button>
+
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function() {
+            alert("Hello from after the body!");
+        });
+    </script>
+    <script src="about.js"></script>
+</body>
+</html>
