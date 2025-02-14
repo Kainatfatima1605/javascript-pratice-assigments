@@ -98,7 +98,14 @@ var num = [10, 20, 30, 40, 50];
 //----------------------- loop
 // for loop ma sub sy phly condution hoti 
 // intazition conduction updating value
-for (let index = 0; index <=5; index++) {
-   console.log("kainat fatima");
+// for (let index = 1; index <=5; index++) {
+//    console.log("kainat fatima");
    
+
+// }
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
 }
